@@ -1,0 +1,10 @@
+{
+  "name": "trm-api",
+  "version": "2.0.7",
+  "scripts": {
+    "start": "dab start --ConfigFileName dab-config.json"
+  },
+  "dependencies": {
+    "@azure/data-api-builder": "latest"
+  }
+}

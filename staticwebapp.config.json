@@ -1,0 +1,18 @@
+{
+  "routes": [
+    {
+      "route": "/api/*",
+      "allowedRoles": ["anonymous", "authenticated"]
+    },
+    {
+      "route": "/graphql/*",
+      "allowedRoles": ["anonymous", "authenticated"]
+    }
+  ],
+  "responseOverrides": {
+    "401": {
+      "statusCode": 401,
+      "statusDescription": "Unauthorized - API Key required"
+    }
+  }
+}
